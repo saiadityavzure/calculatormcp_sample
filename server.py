@@ -41,4 +41,4 @@ def divide(a: float, b: float) -> float:
 
 if __name__ == "__main__":
     # Run the MCP server
-    mcp.run()
+    mcp.run(transport="http", host="127.0.0.1", port=8000)
