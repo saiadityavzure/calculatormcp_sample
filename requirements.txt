@@ -1,2 +1,2 @@
-fastmcp==0.4.2
+fastmcp
 uvicorn
