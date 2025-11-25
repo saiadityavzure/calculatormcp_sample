@@ -1,10 +1,10 @@
-from fastmcp import FastMCP, tool
+from fastmcp import FastMCP
 
 # Create MCP server
 mcp = FastMCP("Arithmetic MCP Server")
 
 # Tool: Addition
-@tool
+@mcp.tool
 def add(a: float, b: float) -> float:
     """
     Add two numbers and return the result.
@@ -12,7 +12,7 @@ def add(a: float, b: float) -> float:
     return a + b
 
 # Tool: Subtraction
-@tool
+@mcp.tool
 def subtract(a: float, b: float) -> float:
     """
     Subtract b from a.
@@ -20,7 +20,7 @@ def subtract(a: float, b: float) -> float:
     return a - b
 
 # Tool: Multiplication
-@tool
+@mcp.tool
 def multiply(a: float, b: float) -> float:
     """
     Multiply two numbers.
@@ -28,7 +28,7 @@ def multiply(a: float, b: float) -> float:
     return a * b
 
 # Tool: Division
-@tool
+@mcp.tool
 def divide(a: float, b: float) -> float:
     """
     Divide a by b.
